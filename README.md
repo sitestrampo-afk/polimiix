@@ -10,13 +10,15 @@ Abra `index.html` diretamente no navegador. Para publicar, envie `index.html` e 
 
 - `index.html`: todo o conteúdo e a estrutura do site, editáveis diretamente em HTML.
 - `assets/css/style.css`: estilos e layout responsivo.
-- `assets/js/script.js`: menu, cards, janelas de atendimento, formulários e calculadora.
+- `assets/js/script.js`: menu, cards, links de atendimento e calculadora.
 - `assets/js/config.js`: configuração do contato.
 - `assets/images/`: fotografias e favicon locais.
 
 ## Configurar o atendimento
 
-Edite `assets/js/config.js` e preencha `whatsapp` com o número real, incluindo código do país e DDD, somente dígitos. Após a revisão do formulário, o botão abre a conversa no WhatsApp com a mensagem preenchida. Sem número configurado, o site permite baixar a solicitação e informa que o canal está em configuração. Nenhuma solicitação é apresentada como enviada automaticamente.
+O atendimento está configurado para **(21) 2888-1609**, com o código do Brasil `55` e a saudação **Olá, desejo um atendimento!**. Todos os links de atendimento e orçamento abrem a conversa em uma nova aba com essa mensagem preenchida. O visitante decide quando enviá-la.
+
+O número e a saudação ficam em `assets/js/config.js`. Os links também estão no HTML para funcionar sem JavaScript; ao alterar o contato, atualize os endereços `https://wa.me/` no `index.html`.
 
 O conteúdo permanece visível mesmo sem JavaScript. O JavaScript adiciona as interações e a calculadora. Não há backend nem envio de formulários a um servidor. O site usa Google Fonts, com fontes alternativas locais; fotografias do Unsplash e ícones SVG estão incluídos no projeto. A licença dos ícones Lucide está em `assets/lucide-LICENSE.txt`.
 
